@@ -8,12 +8,6 @@ var computerMove = generateComputerMove();
 console.log(checkTheWinner(computerMove, playerMove, computerName, playerName));
 }
 
-
-
-
-
-
-
 function generateComputerMove(){
   var randomNumber = Math.random();
   if (randomNumber < 0.33){
@@ -24,8 +18,6 @@ function generateComputerMove(){
     return "paper";
   }
 }
-
-
 
 function checkTheWinner(move1, move2, name1, name2){
 
@@ -48,22 +40,16 @@ if (move1 === "rock") {
 return (name1 + " wins!");
 
 } else {  return ( name2 +" wins");
+        }
+    }
 }
-}
-}
-
-
 
 var playAgain = true;
 while(playAgain){
 
-
 game();
 
-
 playAgain = confirm("play again?");
-
-
 
 }
 
